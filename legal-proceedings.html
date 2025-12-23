@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>Судебное делопроизводство - Суды субъекта РФ</title>
+   <link rel="stylesheet" href="css/reset.css">
+ <link rel="stylesheet" href="css/normalize.css">
+ <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/responsive-variables.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <div class="header__top">
+                <div class="header__logo">
+                    <img src="images/flag.png" alt="Флаг России" class="header__flag">
+                </div>
+                <div class="header__search">
+                    <input type="text" class="header__search-input" placeholder="Поиск по сайту">
+                    <button class="header__search-btn">🔍</button>
+                </div>
+                <div class="header__controls">
+                    <button class="header__control" data-modal="schedule">График работы</button>
+                    <button class="header__control" data-modal="contacts">Контакты</button>
+                    <button class="header__control" id="accessibility-toggle">👁</button>
+                    <button class="header__control">&#128100;</button>
+                </div>
+            </div>
+            <nav class="header__nav">
+                <a href="index.html" class="header__nav-item">Главная</a>
+                <a href="legal-proceedings.html" class="header__nav-item header__nav-item--active">Судебное делопроизводство</a>
+                <a href="courts.html" class="header__nav-item">Суды субъекта РФ</a>
+                <a href="about-court.html" class="header__nav-item">О суде</a>
+                <a href="help.html" class="header__nav-item">Помощь</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="main__container">
+            <h1 class="page-title">Судебное делопроизводство</h1>
+            
+            <div class="proceedings">
+                <div class="proceedings__filter">
+                    <label>Выберите период для выдачи на дату:</label>
+                    <input type="date" class="proceedings__date-input" id="date-filter">
+                    <button class="proceedings__filter-btn" id="apply-date-filter">Применить</button>
+                </div>
+
+                <hr class="section-divider">
+
+                <h2 class="proceedings__section-title" id="schedule-title">Список дел, назначенных к слушанию на "<span id="selected-date">дата</span>"</h2>
+
+                <div class="proceedings__info">
+                    <p class="proceedings__info-text">
+                        (для получения полной информации по делу нажмите на номер дела) <br>
+                         Дела назначенные к судебному разбирательству по делу указанным на данную дату:<br>
+                          В соответствии с "Федеральным законом от 22.12.2008 № 262-ФЗ "Об обеспечении доступа к информации о деятельности судов в Российской Федерации" на сайте размещается информация о делах, назначенных к слушанию, не ранее чем за 7 дней до даты судебного заседания и не позднее чем за 1 день до даты судебного заседания, при условии, что дата судебного заседания назначена не ранее чем через 10 дней с момента поступления дела в суд или с момента принятия решения о назначении даты судебного заседания в суде первой инстанции.
+                    </p>
+                    
+                </div>
+
+                <hr class="section-divider">
+
+
+                <div class="proceedings__section proceedings__section--admin">
+                    <h3 class="proceedings__category-title">Административные дела - первая инстанция</h3>
+                    <table class="proceedings__table">
+                        <thead>
+                            <tr>
+                                <th>№ п/п</th>
+                                <th>Номер дела</th>
+                                <th>Время</th>
+                                <th>Зал судебного заседания</th>
+                                <th>Информация по делу</th>
+                                <th>Судья</th>
+                                <th>Итог</th>
+                                <th>Судебные акты</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>2а-3509/2023-М-2024/2025</td>
+                                <td>10:30</td>
+                                <td>каб.№302 Сергиева Л.В.</td>
+                                <td>Иные дела по не административным делам, как может быть административный судебный процесс, административный судебный процесс по не административным делам судебного процесса</td>
+                                <td>Сергиева Л.В.</td>
+                                <td>Административное</td>
+                                <td>📄</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>2а-3509/2023-М-2024/2025</td>
+                                <td>10:30</td>
+                                <td>каб.№302 Сергиева Л.В.</td>
+                                <td>Иные дела по не административным делам, как может быть административный судебный процесс, административный судебный процесс по не административным делам судебного процесса</td>
+                                <td>Сергиева Л.В.</td>
+                                <td>Административное</td>
+                                <td>📄</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="proceedings__section proceedings__section--civil">
+                    <h3 class="proceedings__category-title">Гражданские дела - первая инстанция</h3>
+                    <table class="proceedings__table">
+                        <thead>
+                            <tr>
+                                <th>№ п/п</th>
+                                <th>Номер дела</th>
+                                <th>Время</th>
+                                <th>Зал судебного заседания</th>
+                                <th>Информация по делу</th>
+                                <th>Судья</th>
+                                <th>Итог</th>
+                                <th>Судебные акты</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>2а-3509/2023-М-2024/2025</td>
+                                <td>10:30</td>
+                                <td>каб.№302 Сергиева Л.В.</td>
+                                <td>Иные дела по не административным делам, как может быть административный судебный процесс</td>
+                                <td>Сергиева Л.В.</td>
+                                <td>Административное</td>
+                                <td>📄</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>2а-3509/2023-М-2024/2025</td>
+                                <td>10:30</td>
+                                <td>каб.№302 Сергиева Л.В.</td>
+                                <td>Иные дела по не административным делам, как может быть административный судебный процесс</td>
+                                <td>Сергиева Л.В.</td>
+                                <td>Административное</td>
+                                <td>📄</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="proceedings__section proceedings__section--criminal">
+                    <h3 class="proceedings__category-title">Уголовные дела - первая инстанция</h3>
+                    <table class="proceedings__table">
+                        <thead>
+                            <tr>
+                                <th>№ п/п</th>
+                                <th>Номер дела</th>
+                                <th>Время</th>
+                                <th>Зал судебного заседания</th>
+                                <th>Информация по делу</th>
+                                <th>Судья</th>
+                                <th>Итог</th>
+                                <th>Судебные акты</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>2а-3509/2023-М-2024/2025</td>
+                                <td>10:30</td>
+                                <td>каб.№302 Сергиева Л.В.</td>
+                                <td>Иные дела по не административным делам, как может быть административный судебный процесс</td>
+                                <td>Сергиева Л.В.</td>
+                                <td>Уголовное</td>
+                                <td>📄</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>2а-3509/2023-М-2024/2025</td>
+                                <td>10:30</td>
+                                <td>каб.№302 Сергиева Л.В.</td>
+                                <td>Иные дела по не административным делам, как может быть административный судебный процесс</td>
+                                <td>Сергиева Л.В.</td>
+                                <td>Уголовное</td>
+                                <td>📄</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="proceedings__section proceedings__section--materials">
+                    <h3 class="proceedings__category-title">Производство по материалам</h3>
+                    <table class="proceedings__table">
+                        <thead>
+                            <tr>
+                                <th>№ п/п</th>
+                                <th>Номер дела</th>
+                                <th>Время</th>
+                                <th>Зал судебного заседания</th>
+                                <th>Информация по делу</th>
+                                <th>Судья</th>
+                                <th>Итог</th>
+                                <th>Судебные акты</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>2а-3509/2023-М-2024/2025</td>
+                                <td>10:30</td>
+                                <td>каб.№302 Сергиева Л.В.</td>
+                                <td>Иные дела по не административным делам, как может быть административный судебный процесс</td>
+                                <td>Сергиева Л.В.</td>
+                                <td>Административное</td>
+                                <td>📄</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>2а-3509/2023-М-2024/2025</td>
+                                <td>10:30</td>
+                                <td>каб.№302 Сергиева Л.В.</td>
+                                <td>Иные дела по не административным делам, как может быть административный судебный процесс</td>
+                                <td>Сергиева Л.В.</td>
+                                <td>Административное</td>
+                                <td>📄</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <hr class="section-divider">
+        </div>
+         
+    </main>
+
+<footer class="footer">
+        <div class="footer__container">
+            <div class="footer__copyright">
+                <p>2006-2025 ©"Государственная автоматизированная система Российской Федерации "Правосудие"</p>
+            </div>
+            <div class="footer__content">
+                <div class="footer__left">
+                    <img src="images/flag.png" alt="Флаг России" class="footer__flag">
+                </div>
+                <div class="footer__center">
+                    <button class="footer__link" data-modal="schedule">График работы</button>
+                    <button class="footer__link" data-modal="contacts">Контакты</button>
+                    <button class="footer__link">🔍</button>
+                    <button class="footer__link">&#128100;</button>
+                </div>
+                <div class="footer__right">
+                    <span class="footer__social-text">Больше о нас в социальных сетях</span>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link" title="ВКонтакте">
+                            <img src="images/vk-icon.png" alt="ВКонтакте" class="footer__social-icon">
+                        </a>
+                        <a href="#" class="footer__social-link" title="Telegram">
+                            <img src="images/telegram-icon.png" alt="Telegram" class="footer__social-icon footer__social-icon--round">
+                        </a>
+                        <a href="#" class="footer__social-link" title="Facebook">
+                            <img src="images/facebook-icon.png" alt="Facebook" class="footer__social-icon footer__social-icon--round">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

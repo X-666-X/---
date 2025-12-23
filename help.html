@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>Помощь - Суды субъекта РФ</title>
+    <link rel="stylesheet" href="css/reset.css">
+ <link rel="stylesheet" href="css/normalize.css">
+ <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive-variables.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <div class="header__top">
+                <div class="header__logo">
+                    <img src="images/flag.png" alt="Флаг России" class="header__flag">
+                </div>
+                <div class="header__search">
+                    <input type="text" class="header__search-input" placeholder="Поиск по сайту">
+                    <button class="header__search-btn">🔍</button>
+                </div>
+                <div class="header__controls">
+                    <button class="header__control" data-modal="schedule">График работы</button>
+                    <button class="header__control" data-modal="contacts">Контакты</button>
+                    <button class="header__control" id="accessibility-toggle">👁</button>
+                    <button class="header__control">&#128100;</button>
+                </div>
+            </div>
+            <nav class="header__nav">
+                <a href="index.html" class="header__nav-item">Главная</a>
+                <a href="legal-proceedings.html" class="header__nav-item">Судебное делопроизводство</a>
+                <a href="courts.html" class="header__nav-item">Суды субъекта РФ</a>
+                <a href="about-court.html" class="header__nav-item">О суде</a>
+                <a href="help.html" class="header__nav-item header__nav-item--active">Помощь</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="main__container">
+            <div class="help-header">
+                <h1 class="help-title">Помощь</h1>
+            </div>
+
+            <section class="help-section">
+                <h2 class="about-section-title about-section-title--underlined">Часто задаваемые вопросы</h2>
+                
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <div class="faq-question" data-faq="1">
+                            <span class="faq-arrow">▶</span>
+                            <span class="faq-text">Вопросы по подаче обращений</span>
+                        </div>
+                        <div class="faq-answer" id="faq-1">
+                            <p>Для подачи обращения в суд необходимо:</p>
+                            <ul>
+                                <li>Подготовить исковое заявление в письменной форме</li>
+                                <li>Приложить документы, подтверждающие ваши требования</li>
+                                <li>Оплатить государственную пошлину</li>
+                                <li>Подать документы в канцелярию суда или через электронную систему</li>
+                                <li>Получить уведомление о принятии обращения к рассмотрению</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question" data-faq="2">
+                            <span class="faq-arrow">▶</span>
+                            <span class="faq-text">Как найти дело по номеру?</span>
+                        </div>
+                        <div class="faq-answer" id="faq-2">
+                            <p>Для поиска дела по номеру:</p>
+                            <ul>
+                                <li>Перейдите в раздел "Судебное делопроизводство"</li>
+                                <li>Введите номер дела в поле поиска</li>
+                                <li>Нажмите кнопку "Найти"</li>
+                                <li>В результатах поиска найдите ваше дело</li>
+                                <li>Кликните на номер дела для получения подробной информации</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question" data-faq="3">
+                            <span class="faq-arrow">▶</span>
+                            <span class="faq-text">Как получить копию решения?</span>
+                        </div>
+                        <div class="faq-answer" id="faq-3">
+                            <p>Получить копию решения можно следующими способами:</p>
+                            <ul>
+                                <li>Обратиться лично в канцелярию суда с паспортом</li>
+                                <li>Подать заявление о выдаче копии решения</li>
+                                <li>Оплатить установленную пошлину за изготовление копии</li>
+                                <li>Получить заверенную копию в назначенное время</li>
+                                <li>Воспользоваться электронными сервисами (при наличии)</li>
+                            </ul
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question" data-faq="4">
+                            <span class="faq-arrow">▶</span>
+                            <span class="faq-text">Как записаться на приём к судье?</span>
+                        </div>
+                        <div class="faq-answer" id="faq-4">
+                            <p>Для записи на приём к судье:</p>
+                            <ul>
+                                <li>Позвоните в приёмную председателя суда по телефону +7 (496) 364-62-25</li>
+                                <li>Укажите цель визита и желаемое время</li>
+                                <li>Предоставьте контактные данные</li>
+                                <li>Получите подтверждение записи</li>
+                                <li>Явитесь в назначенное время с документами</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question" data-faq="5">
+                            <span class="faq-arrow">▶</span>
+                            <span class="faq-text">Как подать электронное обращение?</span>
+                        </div>
+                        <div class="faq-answer" id="faq-5">
+                            <p>Для подачи электронного обращения:</p>
+                            <ul>
+                                <li>Зарегистрируйтесь на портале ГАС "Правосудие"</li>
+                                <li>Войдите в личный кабинет</li>
+                                <li>Выберите тип обращения</li>
+                                <li>Заполните электронную форму</li>
+                                <li>Приложите необходимые документы в электронном виде</li>
+                                <li>Подпишите обращение электронной подписью</li>
+                                <li>Отправьте обращение и получите уведомление</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question" data-faq="6">
+                            <span class="faq-arrow">▶</span>
+                            <span class="faq-text">Как найти судебное решение?</span>
+                        </div>
+                        <div class="faq-answer" id="faq-6">
+                            <p>Найти судебное решение можно:</p>
+                            <ul>
+                                <li>На сайте суда в разделе "Судебные акты"</li>
+                                <li>В системе ГАС "Правосудие"</li>
+                                <li>По номеру дела или фамилии участника</li>
+                                <li>Обратившись в архив суда</li>
+                                <li>Через поиск по дате вынесения решения</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question" data-faq="7">
+                            <span class="faq-arrow">▶</span>
+                            <span class="faq-text">Как зарегистрироваться на сайте?</span>
+                        </div>
+                        <div class="faq-answer" id="faq-7">
+                            <p>Для регистрации на сайте:</p>
+                            <ul>
+                                <li>Нажмите кнопку "Регистрация" в правом верхнем углу</li>
+                                <li>Заполните регистрационную форму</li>
+                                <li>Укажите действующий email адрес</li>
+                                <li>Придумайте надёжный пароль</li>
+                                <li>Подтвердите регистрацию по ссылке из письма</li>
+                                <li>Войдите в личный кабинет</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question" data-faq="8">
+                            <span class="faq-arrow">▶</span>
+                            <span class="faq-text">Как использовать фильтры в расписании заседаний?</span>
+                        </div>
+                        <div class="faq-answer" id="faq-8">
+                            <p>Для использования фильтров в расписании:</p>
+                            <ul>
+                                <li>Перейдите в раздел "Судебное делопроизводство"</li>
+                                <li>Выберите нужную дату в календаре</li>
+                                <li>Используйте фильтры по типу дела (гражданские, уголовные, административные)</li>
+                                <li>Фильтруйте по судье или залу заседания</li>
+                                <li>Нажмите "Применить фильтр" для получения результатов</li>
+                                <li>Сбросьте фильтры при необходимости</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>            </section>
+
+            <hr class="section-divider">
+
+            <section class="help-section">
+                <h2 class="about-section-title about-section-title--underlined">Полезные документы</h2>
+                
+                <div class="documents-list">
+                    <div class="document-item">
+                        <span class="document-text">Бланки заявлений</span>
+                        <a href="#" class="document-download">📥</a>
+                    </div>
+                    <div class="document-item">
+                        <span class="document-text">Руководство пользователя сайта</span>
+                        <a href="#" class="document-download">📥</a>
+                    </div>
+                    <div class="document-item">
+                        <span class="document-text">Памятки по работе с сервисами сайта</span>
+                        <a href="#" class="document-download">📥</a>
+                    </div>
+                    <div class="document-item">
+                        <span class="document-text">Список на нормативно-правовых актов</span>
+                        <a href="#" class="document-download">📥</a>
+                    </div>
+                    <div class="document-item">
+                        <span class="document-text">Инструкция по использованию сайта</span>
+                        <a href="#" class="document-download">📥</a>
+                    </div>
+                    <div class="document-item">
+                        <span class="document-text">Политика конфиденциальности</span>
+                        <a href="#" class="document-download">📥</a>
+                    </div>
+                    <div class="document-item">
+                        <span class="document-text">Пользовательское соглашение</span>
+                        <a href="#" class="document-download">📥</a>
+                    </div>
+                    <div class="document-item">
+                        <span class="document-text">Правила поведения в зале судебного заседания</span>
+                        <a href="#" class="document-download">📥</a>
+                    </div>
+                </div>
+            </section>
+
+            <hr class="section-divider">
+
+            <section class="help-section">
+                <h2 class="about-section-title about-section-title--underlined">Обучение и материалы</h2>
+                
+                <div class="learning-materials">
+                    <div class="learning-item">
+                        <img src="images/video1.png" alt="Видеообзоры использования сайта" class="learning-image">
+                        <p class="learning-caption">Видеообзоры использования сайта</p>
+                    </div>
+                    <div class="learning-item">
+                        <img src="images/video2.png" alt="Семинары или вебинары для пользователей" class="learning-image">
+                        <p class="learning-caption">Семинары или вебинары для пользователей</p>
+                    </div>
+                </div>
+            </section>
+
+            <hr class="section-divider">
+
+            <section class="help-section">
+                <h2 class="about-section-title about-section-title--underlined">Контакты поддержки</h2>
+                
+                <div class="support-contacts">
+                    <p><strong>Телефоны (горячая линия, региональные):</strong> 78996512365, 74556321456</p>
+                    <p><strong>Email (с формой отправки писем):</strong> post@mosoblsud.ru</p>
+                    <p><strong>Онлайн-чат (в реальном времени)</strong></p>
+                    <p><strong>График работы:</strong> 5/5 с 10:00 до 21:00</p>
+                    <p><strong>Адреса офисов:</strong> 143411, Московская обл., г. Красногорск, бульвар Строителей, д. 4, корп. 3</p>
+                </div>
+            </section>
+
+            <div class="error-report">
+                <button class="error-report-btn" data-modal="error-report">⚠ Сообщить об ошибке ⚠</button>
+            </div>
+        </div>
+    </main>
+
+<footer class="footer">
+        <div class="footer__container">
+            <div class="footer__copyright">
+                <p>2006-2025 ©"Государственная автоматизированная система Российской Федерации "Правосудие"</p>
+            </div>
+            <div class="footer__content">
+                <div class="footer__left">
+                    <img src="images/flag.png" alt="Флаг России" class="footer__flag">
+                </div>
+                <div class="footer__center">
+                    <button class="footer__link" data-modal="schedule">График работы</button>
+                    <button class="footer__link" data-modal="contacts">Контакты</button>
+                    <button class="footer__link">🔍</button>
+                    <button class="footer__link">&#128100;</button>
+                </div>
+                <div class="footer__right">
+                    <span class="footer__social-text">Больше о нас в социальных сетях</span>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link" title="ВКонтакте">
+                            <img src="images/vk-icon.png" alt="ВКонтакте" class="footer__social-icon">
+                        </a>
+                        <a href="#" class="footer__social-link" title="Telegram">
+                            <img src="images/telegram-icon.png" alt="Telegram" class="footer__social-icon footer__social-icon--round">
+                        </a>
+                        <a href="#" class="footer__social-link" title="Facebook">
+                            <img src="images/facebook-icon.png" alt="Facebook" class="footer__social-icon footer__social-icon--round">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Модальное окно для сообщения об ошибке -->
+    <div id="modal-error-report" class="modal">
+        <div class="modal__content modal__content--form">
+            <button class="modal__close" type="button">&times;</button>
+            <h2 class="modal__title">Сообщить об ошибке</h2>
+            <form class="error-form" id="error-form">
+                <div class="form-group">
+                    <label for="error-type" class="form-label">Тип ошибки:</label>
+                    <select id="error-type" name="error-type" class="form-select" required>
+                        <option value="">Выберите тип ошибки</option>
+                        <option value="technical">Техническая ошибка</option>
+                        <option value="content">Ошибка в содержании</option>
+                        <option value="design">Проблема с отображением</option>
+                        <option value="functionality">Неработающая функция</option>
+                        <option value="other">Другое</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="error-page" class="form-label">Страница с ошибкой:</label>
+                    <input type="text" id="error-page" name="error-page" class="form-input" placeholder="URL страницы или название раздела" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="error-description" class="form-label">Описание ошибки:</label>
+                    <textarea id="error-description" name="error-description" class="form-textarea" rows="5" placeholder="Подробно опишите обнаруженную ошибку..." required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="user-email" class="form-label">Ваш email (необязательно):</label>
+                    <input type="email" id="user-email" name="user-email" class="form-input" placeholder="email@example.com">
+                </div>
+                
+                <div class="form-group">
+                    <label for="user-name" class="form-label">Ваше имя (необязательно):</label>
+                    <input type="text" id="user-name" name="user-name" class="form-input" placeholder="Ваше имя">
+                </div>
+                
+                <div class="form-actions">
+                    <button type="submit" class="form-btn form-btn--primary">Отправить сообщение</button>
+                    <button type="button" class="form-btn form-btn--secondary" data-close-modal>Отмена</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

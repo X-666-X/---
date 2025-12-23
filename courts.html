@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>Суды субъекта РФ - Суды субъекта РФ</title>
+    <link rel="stylesheet" href="css/reset.css">
+ <link rel="stylesheet" href="css/normalize.css">
+ <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/responsive-variables.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <div class="header__top">
+                <div class="header__logo">
+                    <img src="images/flag.png" alt="Флаг России" class="header__flag">
+                </div>
+                <div class="header__search">
+                    <input type="text" class="header__search-input" placeholder="Поиск по сайту">
+                    <button class="header__search-btn">🔍</button>
+                </div>
+                <div class="header__controls">
+                    <button class="header__control" data-modal="schedule">График работы</button>
+                    <button class="header__control" data-modal="contacts">Контакты</button>
+                    <button class="header__control" id="accessibility-toggle">👁</button>
+                    <button class="header__control">&#128100;</button>
+                </div>
+            </div>
+            <nav class="header__nav">
+                <a href="index.html" class="header__nav-item">Главная</a>
+                <a href="legal-proceedings.html" class="header__nav-item">Судебное делопроизводство</a>
+                <a href="courts.html" class="header__nav-item header__nav-item--active">Суды субъекта РФ</a>
+                <a href="about-court.html" class="header__nav-item">О суде</a>
+                <a href="help.html" class="header__nav-item">Помощь</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="main__container">
+            <h1 class="page-title">Суды субъекта РФ</h1>
+            
+            <div class="courts">
+                <div class="courts__filter">
+                    <h2 class="courts__filter-title">Выберите параметры для быстрого поиска суда:</h2>
+                    <div class="filter">
+                        <select class="filter__select" id="court-type">
+                            <option value="">Тип суда</option>
+                            <option value="regional">Областной суд</option>
+                            <option value="arbitration">Арбитражный суд</option>
+                            <option value="military">Военный суд</option>
+                            <option value="district">Районный суд</option>
+                        </select>
+                        <select class="filter__select" id="court-region">
+                            <option value="">Регион</option>
+                            <option value="moscow">Московская область</option>
+                            <option value="sergiev">Сергиев Посад</option>
+                        </select>
+                        <button class="filter__btn" id="apply-filter">Применить фильтр</button>
+                    </div>
+                </div>
+
+                <div class="courts__list">
+                    <div class="court-card" data-type="regional" data-region="moscow">
+                        <div class="court-card__content">
+                            <div class="court-card__info">
+                                <h3 class="court-card__title">Московский областной суд</h3>
+                                <div class="court-card__details">
+                                    <p><strong>Адрес:</strong> 143411, Московская обл., г. Красногорск, бульвар Строителей, д. 4, корп. 3</p>
+                                    <p><strong>Телефон:</strong> +7 (498) 692 60 00</p>
+                                    <p><strong>E-mail:</strong> post@mosoblsud.ru</p>
+                                    <p><strong>Официальный сайт:</strong> http://oblsud.mo.sudrf.ru</p>
+                                </div>
+                                <button class="court-card__btn" data-court="regional">Подробнее</button>
+                            </div>
+                            <div class="court-card__image">
+                                <img src="images/court-regional.jpg" alt="Московский областной суд" class="court-card__img">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="court-card" data-type="arbitration" data-region="moscow">
+                        <div class="court-card__content">
+                            <div class="court-card__info">
+                                <h3 class="court-card__title">Арбитражный суд субъекта РФ</h3>
+                                <div class="court-card__details">
+                                    <p><strong>Адрес:</strong> 143411, Московская обл., г. Красногорск, бульвар Строителей, д. 4, корп. 3</p>
+                                    <p><strong>Телефон:</strong> +7 (498) 692 60 00</p>
+                                    <p><strong>E-mail:</strong> post@mosoblsud.ru</p>
+                                    <p><strong>Официальный сайт:</strong> http://oblsud.mo.sudrf.ru</p>
+                                </div>
+                                <button class="court-card__btn" data-court="arbitration">Подробнее</button>
+                            </div>
+                            <div class="court-card__image">
+                                <img src="images/court-arbitration.jpg" alt="Арбитражный суд" class="court-card__img">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="court-card" data-type="military" data-region="moscow">
+                        <div class="court-card__content">
+                            <div class="court-card__info">
+                                <h3 class="court-card__title">Апелляционный военный суд</h3>
+                                <div class="court-card__details">
+                                    <p><strong>Адрес:</strong> 143411, Московская обл., г. Красногорск, бульвар Строителей, д. 4, корп. 3</p>
+                                    <p><strong>Телефон:</strong> +7 (498) 692 60 00</p>
+                                    <p><strong>E-mail:</strong> post@mosoblsud.ru</p>
+                                    <p><strong>Официальный сайт:</strong> http://oblsud.mo.sudrf.ru</p>
+                                </div>
+                                <button class="court-card__btn" data-court="military">Подробнее</button>
+                            </div>
+                            <div class="court-card__image">
+                                <img src="images/court-military.jpg" alt="Военный суд" class="court-card__img">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="court-card" data-type="district" data-region="moscow">
+                        <div class="court-card__content">
+                            <div class="court-card__info">
+                                <h3 class="court-card__title">Участок мирового судьи</h3>
+                                <div class="court-card__details">
+                                    <p><strong>Адрес:</strong> 143411, Московская обл., г. Красногорск, бульвар Строителей, д. 4, корп. 3</p>
+                                    <p><strong>Телефон:</strong> +7 (498) 692 60 00</p>
+                                    <p><strong>E-mail:</strong> post@mosoblsud.ru</p>
+                                    <p><strong>Официальный сайт:</strong> http://oblsud.mo.sudrf.ru</p>
+                                </div>
+                                <button class="court-card__btn" data-court="district">Подробнее</button>
+                            </div>
+                            <div class="court-card__image">
+                                <img src="images/court-district.jpg" alt="Мировой суд" class="court-card__img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="courts__categories">
+                    <h2 class="courts__categories-title">Гарнизонный военный суд</h2>
+                    
+                    <div class="court-categories">
+                        <div class="court-categories__item">
+                            <button class="court-categories__btn" data-category="naro-fominsk">
+                                Наро-Фоминский гарнизонный военный суд
+                                <span class="court-categories__arrow">›</span>
+                            </button>
+                        </div>
+                        
+                        <div class="court-categories__item">
+                            <button class="court-categories__btn" data-category="odintsovo">
+                                Одинцовский гарнизонный военный суд
+                                <span class="court-categories__arrow">›</span>
+                            </button>
+                        </div>
+                        
+                        <div class="court-categories__item">
+                            <button class="court-categories__btn" data-category="reutov">
+                                Реутовский гарнизонный военный суд
+                                <span class="court-categories__arrow">›</span>
+                            </button>
+                        </div>
+                        
+                        <div class="court-categories__item">
+                            <button class="court-categories__btn" data-category="solnechnogorsk">
+                                Солнечногорский гарнизонный военный суд
+                                <span class="court-categories__arrow">›</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <h2 class="courts__categories-title">Районный, городской, межрайонный суд</h2>
+                    
+                    <div class="court-categories">
+                        <div class="court-categories__item">
+                            <button class="court-categories__btn" data-category="dmitrov">
+                                Дмитровский городской суд Московской области
+                                <span class="court-categories__arrow">›</span>
+                            </button>
+                        </div>
+                        
+                        <div class="court-categories__item">
+                            <button class="court-categories__btn" data-category="kolomna">
+                                Коломенский городской суд Московской области
+                                <span class="court-categories__arrow">›</span>
+                            </button>
+                        </div>
+                        
+                        <div class="court-categories__item">
+                            <button class="court-categories__btn" data-category="sergiev-posad">
+                                Сергиево-Посадский городской суд Московской области
+                                <span class="court-categories__arrow">›</span>
+                            </button>
+                        </div>
+                        
+                        <div class="court-categories__item">
+                            <button class="court-categories__btn" data-category="taldom">
+                                Талдомский районный суд Московской области
+                                <span class="court-categories__arrow">›</span>
+                            </button>
+                        </div>
+                        
+                        <div class="court-categories__item">
+                            <button class="court-categories__btn" data-category="balashikha">
+                                Балашихинский городской суд Московской области
+                                <span class="court-categories__arrow">›</span>
+                            </button>
+                        </div>
+                        
+                        <div class="court-categories__item">
+                            <button class="court-categories__btn" data-category="zhukovsky">
+                                Жуковский городской суд Московской области
+                                <span class="court-categories__arrow">›</span>
+                            </button>
+                        </div>
+                        
+                        <div class="court-categories__item">
+                            <button class="court-categories__btn" data-category="klin">
+                                Клинский городской суд Московской области
+                                <span class="court-categories__arrow">›</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="section-divider">
+        </div>
+        
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__copyright">
+                <p>2006-2025 ©"Государственная автоматизированная система Российской Федерации "Правосудие"</p>
+            </div>
+            <div class="footer__content">
+                <div class="footer__left">
+                    <img src="images/flag.png" alt="Флаг России" class="footer__flag">
+                </div>
+                <div class="footer__center">
+                    <button class="footer__link" data-modal="schedule">График работы</button>
+                    <button class="footer__link" data-modal="contacts">Контакты</button>
+                    <button class="footer__link">🔍</button>
+                    <button class="footer__link">&#128100;</button>
+                </div>
+                <div class="footer__right">
+                    <span class="footer__social-text">Больше о нас в социальных сетях</span>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link" title="ВКонтакте">
+                            <img src="images/vk-icon.png" alt="ВКонтакте" class="footer__social-icon">
+                        </a>
+                        <a href="#" class="footer__social-link" title="Telegram">
+                            <img src="images/telegram-icon.png" alt="Telegram" class="footer__social-icon footer__social-icon--round">
+                        </a>
+                        <a href="#" class="footer__social-link" title="Facebook">
+                            <img src="images/facebook-icon.png" alt="Facebook" class="footer__social-icon footer__social-icon--round">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/main.js"></script>
+</body>
+</html>

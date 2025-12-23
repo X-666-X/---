@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>Главная - Суды субъекта РФ</title>
+    <link rel="stylesheet" href="css/reset.css">
+ <link rel="stylesheet" href="css/normalize.css">
+ <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/responsive-variables.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <div class="header__top">
+                <div class="header__logo">
+                    <img src="images/flag.png" alt="Флаг России" class="header__flag">
+                </div>
+                <div class="header__search">
+                    <input type="text" class="header__search-input" placeholder="Поиск по сайту">
+                    <button class="header__search-btn">🔍</button>
+                </div>
+                <div class="header__controls">
+                    <button class="header__control" data-modal="schedule">График работы</button>
+                    <button class="header__control" data-modal="contacts">Контакты</button>
+                    <button class="header__control" id="accessibility-toggle">👁</button>
+                    <button class="header__control">&#128100;</button>
+                </div>
+            </div>
+            <nav class="header__nav">
+                <a href="index.html" class="header__nav-item header__nav-item--active">Главная</a>
+                <a href="legal-proceedings.html" class="header__nav-item">Судебное делопроизводство</a>
+                <a href="courts.html" class="header__nav-item">Суды субъекта РФ</a>
+                <a href="about-court.html" class="header__nav-item">О суде</a>
+                <a href="help.html" class="header__nav-item">Помощь</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="main__container">
+            <section class="news">
+                <h2 class="news__title">Главные новости</h2>
+                <div class="news__slider">
+                    <button class="news__arrow news__arrow--prev">‹</button>
+                    <div class="news__content">
+                        <div class="news__image">
+                            <img src="images/news1.jpg" alt="Новость" class="news__img">
+                        </div>
+                        <div class="news__text">
+                            <p>Сергиево-Посадский городской суд составил в июле Верховное представление Суда о динамике дел по заместителю председателя Сергиево-Посадского городского суда Московской области Шапиро Е.Г. в качестве председателя по делу о дисциплинарной ответственности по ФЗ, событий Московской области.</p>
+                            <p>Сергиево-Посадский городской суд 11 июня по обвинению по части 1 статьи 286.3 УК РФ публичного действия, направленные на дискредитацию исполнительной Вооруженных Сил Российской Федерации, приговорил к административной ответственности за административное деяние в отношении должностного лица.</p>
+                        </div>
+                    </div>
+                    <button class="news__arrow news__arrow--next">›</button>
+                </div>
+                <div class="news__dots">
+                    <span class="news__dot news__dot--active"></span>
+                    <span class="news__dot"></span>
+                    <span class="news__dot"></span>
+                </div>
+            </section>
+
+            <hr class="section-divider">
+
+            <section class="schedule">
+                <h2 class="schedule__title">График работы суда</h2>
+                <table class="schedule__table">
+                    <thead>
+                        <tr>
+                            <th>День недели</th>
+                            <th>Часы работы</th>
+                            <th>Обеденный перерыв</th>
+                            <th>Приём</th>
+                            <th>Работа архива</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Понедельник</td>
+                            <td>9:00-18:00</td>
+                            <td>13:00-14:00</td>
+                            <td>9:00-17:00</td>
+                            <td>—</td>
+                        </tr>
+                        <tr>
+                            <td>Вторник</td>
+                            <td>9:00-18:00</td>
+                            <td>13:00-14:00</td>
+                            <td>9:00-17:00</td>
+                            <td>9:00-18:00</td>
+                        </tr>
+                        <tr>
+                            <td>Среда</td>
+                            <td>9:00-18:00</td>
+                            <td>13:00-14:00</td>
+                            <td>9:00-17:00</td>
+                            <td>—</td>
+                        </tr>
+                        <tr>
+                            <td>Четверг</td>
+                            <td>9:00-18:00</td>
+                            <td>13:00-14:00</td>
+                            <td>9:00-17:00</td>
+                            <td>9:00-18:00</td>
+                        </tr>
+                        <tr>
+                            <td>Пятница</td>
+                            <td>9:00-16:45</td>
+                            <td>13:00-14:00</td>
+                            <td>9:00-16:00</td>
+                            <td>—</td>
+                        </tr>
+                        <tr>
+                            <td>Суббота</td>
+                            <td>Выходной</td>
+                            <td>Выходной</td>
+                            <td>Выходной</td>
+                            <td>Выходной</td>
+                        </tr>
+                        <tr>
+                            <td>Воскресенье</td>
+                            <td>Выходной</td>
+                            <td>Выходной</td>
+                            <td>Выходной</td>
+                            <td>Выходной</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="schedule__note">Личный приём граждан в судебе уточняется по телефону. Предварительные дисциплинарный день сокращается на 1 час. Переводы технических работ последние пятницы месяца: возможные ограничения в работе электронных сервисов. Приём в архиве осуществляется по записи.</p>
+            </section>
+
+            <hr class="section-divider">
+
+            <section class="contacts">
+                <h2 class="contacts__title">Контакты</h2>
+                <div class="contacts__content">
+                    <div class="contacts__info">
+                        <div class="contacts__main-info">
+                            <div class="contacts__section">
+                                <strong>Коллегиальный аппарат суда:</strong>
+                                Сергиево-Посадский городской суд Московской области
+                            </div>
+                            
+                            <div class="contacts__section">
+                                <strong>Юридический адрес:</strong>
+                                141300, Московская обл., г. Сергиев Посад, пл. Советская, д. 2, 255 Б
+                            </div>
+                            
+                            <div class="contacts__section">
+                                <strong>тел.: 8(496) 540-22-90</strong><br>
+                                📞 Большинство автобусной остановки (Институт)<br>
+                                <strong>Факс: 8(496) 540-22-90</strong>
+                            </div>
+                            
+                            <div class="contacts__section">
+                                <strong>Телефоны (с городского):</strong><br>
+                                📞 Канцелярия: +7 (496) 540-22-90<br>
+                                📞 Архив: +7 (496) 153-23-20<br>
+                                📞 Горячая линия: +7 (496) 540-89-54<br>
+                                📞 Дежурный судья: +7 (915) 153-14-22 (для экстренных случаев)
+                            </div>
+                            
+                            <div class="contacts__section">
+                                <strong>Электронная почта:</strong><br>
+                                📧 Общая почта: sergiev.pos@sudrf.ru
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contacts__map">
+                        <div class="contacts__map-placeholder">
+                            <img src="images/map-placeholder.png" alt="Карта проезда" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contacts__schedule">
+                    <div class="contacts__schedule-item">
+                        <strong>Канцелярия:</strong> +7 (496) 540-22-90, 107об. Пн-Пт: 9:00-17:00
+                    </div>
+                    <div class="contacts__schedule-item">
+                        <strong>Архив:</strong> +7 (496) 153-23-20об. Вт, Чт: 10:00-16:00
+                    </div>
+                    <div class="contacts__schedule-item">
+                        <strong>Приёмная председателя:</strong> +7 (496) 364-62-25, 315об. По записи
+                    </div>
+                </div>
+            </section>
+             <hr class="section-divider">
+        </div>
+    
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__copyright">
+                <p>2006-2025 ©"Государственная автоматизированная система Российской Федерации "Правосудие"</p>
+            </div>
+            <div class="footer__content">
+                <div class="footer__left">
+                    <img src="images/flag.png" alt="Флаг России" class="footer__flag">
+                </div>
+                <div class="footer__center">
+                    <button class="footer__link" data-modal="schedule">График работы</button>
+                    <button class="footer__link" data-modal="contacts">Контакты</button>
+                    <button class="footer__link">🔍</button>
+                    <button class="footer__link">&#128100;</button>
+                </div>
+                <div class="footer__right">
+                    <span class="footer__social-text">Больше о нас в социальных сетях</span>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link" title="ВКонтакте">
+                            <img src="images/vk-icon.png" alt="ВКонтакте" class="footer__social-icon">
+                        </a>
+                        <a href="#" class="footer__social-link" title="Telegram">
+                            <img src="images/telegram-icon.png" alt="Telegram" class="footer__social-icon footer__social-icon--round">
+                        </a>
+                        <a href="#" class="footer__social-link" title="Facebook">
+                            <img src="images/facebook-icon.png" alt="Facebook" class="footer__social-icon footer__social-icon--round">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

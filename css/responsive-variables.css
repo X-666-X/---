@@ -1,0 +1,276 @@
+/* АДАПТИВНЫЕ CSS ПЕРЕМЕННЫЕ */
+
+:root {
+  /* Базовые размеры */
+  --container-max-width: 1200px;
+  --container-padding: 20px;
+  
+  /* Брейкпоинты */
+  --mobile-max: 480px;
+  --tablet-max: 768px;
+  --desktop-min: 1024px;
+  
+  /* Адаптивные размеры шрифтов */
+  --font-size-xs: clamp(10px, 2vw, 12px);
+  --font-size-sm: clamp(12px, 2.5vw, 14px);
+  --font-size-base: clamp(14px, 3vw, 16px);
+  --font-size-lg: clamp(16px, 3.5vw, 18px);
+  --font-size-xl: clamp(18px, 4vw, 24px);
+  --font-size-2xl: clamp(24px, 5vw, 32px);
+  --font-size-3xl: clamp(32px, 6vw, 48px);
+  
+  /* Адаптивные отступы */
+  --spacing-xs: clamp(4px, 1vw, 8px);
+  --spacing-sm: clamp(8px, 2vw, 12px);
+  --spacing-md: clamp(12px, 3vw, 20px);
+  --spacing-lg: clamp(20px, 4vw, 32px);
+  --spacing-xl: clamp(32px, 5vw, 48px);
+  
+  /* Адаптивные размеры элементов */
+  --button-height: clamp(36px, 8vw, 44px);
+  --input-height: clamp(40px, 8vw, 48px);
+  --header-height: clamp(60px, 12vw, 80px);
+  
+  /* Viewport height fix для мобильных */
+  --vh: 1vh;
+  --full-height: calc(var(--vh, 1vh) * 100);
+}
+
+/* Планшеты */
+@media (max-width: 1024px) {
+  :root {
+    --container-padding: 15px;
+    --font-size-base: clamp(13px, 2.8vw, 15px);
+    --spacing-md: clamp(10px, 2.5vw, 16px);
+    --spacing-lg: clamp(16px, 3.5vw, 24px);
+  }
+}
+
+/* Мобильные устройства */
+@media (max-width: 768px) {
+  :root {
+    --container-padding: 10px;
+    --font-size-base: clamp(12px, 2.5vw, 14px);
+    --spacing-sm: clamp(6px, 1.5vw, 10px);
+    --spacing-md: clamp(8px, 2vw, 12px);
+    --spacing-lg: clamp(12px, 3vw, 20px);
+    --button-height: 44px; /* Фиксированный размер для касания */
+    --input-height: 44px;
+  }
+}
+
+/* Очень маленькие экраны */
+@media (max-width: 480px) {
+  :root {
+    --container-padding: 8px;
+    --font-size-xs: 10px;
+    --font-size-sm: 11px;
+    --font-size-base: 12px;
+    --spacing-xs: 4px;
+    --spacing-sm: 6px;
+    --spacing-md: 8px;
+    --spacing-lg: 12px;
+  }
+}
+
+/* Очень маленькие экраны */
+@media (max-width: 320px) {
+  :root {
+    --container-padding: 5px;
+    --font-size-xs: 9px;
+    --font-size-sm: 10px;
+    --font-size-base: 11px;
+    --spacing-xs: 3px;
+    --spacing-sm: 4px;
+    --spacing-md: 6px;
+    --spacing-lg: 8px;
+  }
+}
+
+/* Утилитарные классы для адаптивности */
+.container-responsive {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+}
+
+.text-responsive {
+  font-size: var(--font-size-base);
+  line-height: 1.6;
+}
+
+.spacing-responsive {
+  margin-bottom: var(--spacing-md);
+}
+
+.button-responsive {
+  min-height: var(--button-height);
+  padding: var(--spacing-sm) var(--spacing-md);
+  font-size: var(--font-size-sm);
+}
+
+.input-responsive {
+  min-height: var(--input-height);
+  padding: var(--spacing-sm);
+  font-size: var(--font-size-base);
+}
+
+/* Скрытие элементов на разных устройствах */
+.hide-mobile {
+  display: block;
+}
+
+.hide-tablet {
+  display: block;
+}
+
+.hide-desktop {
+  display: block;
+}
+
+.show-mobile {
+  display: none;
+}
+
+.show-tablet {
+  display: none;
+}
+
+.show-desktop {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .hide-mobile {
+    display: none !important;
+  }
+  
+  .show-mobile {
+    display: block !important;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .hide-tablet {
+    display: none !important;
+  }
+  
+  .show-tablet {
+    display: block !important;
+  }
+}
+
+@media (min-width: 1025px) {
+  .hide-desktop {
+    display: none !important;
+  }
+  
+  .show-desktop {
+    display: block !important;
+  }
+}
+
+/* Адаптивная сетка */
+.grid-responsive {
+  display: grid;
+  gap: var(--spacing-md);
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+@media (max-width: 768px) {
+  .grid-responsive {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-sm);
+  }
+}
+
+/* Адаптивный флекс */
+.flex-responsive {
+  display: flex;
+  gap: var(--spacing-md);
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .flex-responsive {
+    flex-direction: column;
+    gap: var(--spacing-sm);
+  }
+}
+
+/* Адаптивные изображения */
+.image-responsive {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Адаптивные таблицы */
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+@media (max-width: 768px) {
+  .table-responsive {
+    font-size: var(--font-size-xs);
+  }
+  
+  .table-responsive table {
+    min-width: 600px;
+  }
+}
+
+/* Адаптивная типографика */
+.heading-responsive {
+  font-size: var(--font-size-2xl);
+  line-height: 1.2;
+  margin-bottom: var(--spacing-md);
+}
+
+.subheading-responsive {
+  font-size: var(--font-size-xl);
+  line-height: 1.3;
+  margin-bottom: var(--spacing-sm);
+}
+
+/* Адаптивные карточки */
+.card-responsive {
+  padding: var(--spacing-md);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: var(--spacing-md);
+}
+
+@media (max-width: 768px) {
+  .card-responsive {
+    padding: var(--spacing-sm);
+    margin-bottom: var(--spacing-sm);
+  }
+}
+
+/* Адаптивные модальные окна */
+.modal-responsive {
+  width: 90%;
+  max-width: 600px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+@media (max-width: 768px) {
+  .modal-responsive {
+    width: 95%;
+    max-height: calc(var(--full-height) - 40px);
+    margin: 20px auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .modal-responsive {
+    width: 98%;
+    max-height: calc(var(--full-height) - 20px);
+    margin: 10px auto;
+  }
+}
